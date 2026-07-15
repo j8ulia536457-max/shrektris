@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "path": "d:/Projetos Programação/Exercícios html/shrektris/prototipo"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.js": "javascript"
+    },
+    "search.exclude": {
+      "**/.git": true
+    }
+  }
+}
