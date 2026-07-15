@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shrektris - SNES Edition</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="snes-container">
+            <header>
+                <h1 class="shrek-title">SHREKTRIS</h1>
+                <p class="subtitle">SUPER NINTENDO SYSTEM</p>
+            </header>
+
+            <div class="game-area">
+                <!-- Game Canvas, tela de pintura, colocar uma tela de 240x480 pixels-->
+                <canvas id="tetris" width="240" height="480"></canvas>
+
+                <div class="sidebar">
+                    <div class="box score-box">
+                        <h3>PONTOS</h3>
+                        <span id="score">000000</span>
+                    </div>
+                    <div class="box next-box">
+                        <h3>PRÓXIMO</h3>
+                        <canvas id="next" width="96" height="96"></canvas>
+                    </div>
+                    <div class="box level-box">
+                        <h3>PÂNTANO</h3>
+                        <span id="level">1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="game.js"></script>
+    </body>
+</html>
