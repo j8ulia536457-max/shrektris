@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body{
-    background-color: #1a2f15;
+    background: url(../_imagens/wp14008271-shrek-swamp-wallpapers.jpg) no-repeat center;
+    background-attachment:scroll;
     color:#f1ebd9;
     font-family: 'Press Start 2P', monospace;
     display: flex;
@@ -14,14 +15,30 @@ body{
 
 /* Container que imita a tela de uma tv antiga / snes */
 .snes-container{
-    background:#4a3319; /*marrom madeira*/
-    border:8px solid #2e1f0e; /*borda de madeira escura*/
+    position:relative;
+    background:url(../_imagens/colagem-shreks.jpeg);
+    border:8px solid #3b6f03; /*borda de madeira escura*/
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 0 #1b1208, 0 20px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
+    overflow: visible;
 }
-
+/*imagem das orelhas posicionada no topo*/
+.shrek-ears{
+    position:absolute;
+    top:-490px;
+    left: 45%;
+    transform:translateX(-50%);
+    width:100%;
+    z-index:10;
+    pointer-events:none;
+}
+.shrek-ears img{
+    width: 100%;
+    height: auto;
+    display:block;
+}
 /* Títulos */
 .shrek-title{
     color:#c0d838; /*verde shrek*/
